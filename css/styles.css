@@ -1,0 +1,109 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1,h2, h3, h4, h5, h6 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.separator {
+  height: 100px;
+  width: 100%;
+  margin: 10px;
+}
+
+
+.navbar-nav {
+  display: flex;
+  justify-content: right;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav a:last-child {
+  color: green;
+}
+
+.oscurecer {
+  filter: brightness(40%);
+}
+
+.jumbotron {
+  z-index: 100;
+}
+
+
+.card-custom {
+  display: flex;
+  max-width: 280px;
+  justify-content: center;
+  align-self: center;
+}
+
+.orador-tag1 {
+  display: inline-block;
+  font-size: 12px;
+  background-color: #ffc007;
+  padding: 4px;
+  border-radius: 20%;
+}
+.orador-tag2 {
+  display: inline-block;
+  font-size: 12px;
+  background-color: #15a4b5;
+  color: #fff;
+  padding: 4px;
+  border-radius: 20%;
+}
+.orador-tag3 {
+  display: inline-block;
+  font-size: 12px;
+  background-color: #6c757e;
+  color: #fff;
+  padding: 4px;
+  border-radius: 20%;
+}
+.orador-tag4 {
+  display: inline-block;
+  font-size: 12px;
+  background-color: #de3647;
+  color: #fff;
+  padding: 4px;
+  border-radius: 20%;
+}
+
+.contacto-h6 {
+  font-size: 12px;
+}
+
+.formButton{
+  background-color: #96C21D !important;
+  color: white !important;
+  display: inline-block !important;
+}
+
+
+
+footer a {
+  text-decoration: none;
+  color: white; 
+}
+
+.img-honolulu {
+  width: 50vw;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .img-honolulu {
+  width: 100vw;
+  }
+}

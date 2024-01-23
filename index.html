@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>SPEAKER Talks</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script defer src="js/index.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar bg-dark border-bottom fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1"><a href="./index.html"><img src="media/speaker_banner.png" alt="Logo" width="100" height="25"></a><span class="px-4"> </span>Ideas worth spreading
+        </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+           <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#talks">Talks</a>
+            <a class="nav-link" href="#date">Place and Hour</a>
+            <a class="nav-link" href="#speaker">Become an speaker</a>
+            <a class="nav-link" href="./admin.html">Admin</a>
+           </div>
+         </div>
+       </div>
+     </nav>
+  </header>
+
+  <!-- <div class="separator"></div>
+  <hr/> -->
+
+
+<!-- 
+  <fieldset>
+    <legend>New Speaker</legend>
+      <input name="name" placehodler="name" id="name">
+      <input name="surname" placehodler="surname" id="surname">
+      <input name="topic" placehodler="topic" id="topic">
+      <input name="email" placehodler="email" id="email">
+      <button id="btnSend" type="button" class="btn btn-success">
+        Send
+      </button>
+  </fieldset>
+  <br/>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 mt-2">
+            <button class="btn btn-success" id="btnList">
+                List Speakers
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-1" id="msj">
+
+        </div>
+        <div class="col-12">
+            <div id="users">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Surname</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">&nbsp;</th>
+                    </tr>
+                    </thead>
+                    <tbody id="usersRows">                          
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="mb-4 mt-4"></div>
+            <div class="mb-4 mt-4"></div>
+            <div class="mb-4 mt-4"></div>
+            <div class="mb-4 mt-4"></div>
+            <div class="mb-4 mt-4"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Put the data</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <input id="nameUpdate">
+          <input id="surnameUpdate">
+          <input id="topicUpdate"> 
+          <input id="emailUpdate">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCloseModal">
+          Cancel
+      </button>
+      <button type="button" class="btn btn-primary" onclick="updateSpeaker()">
+          Update
+      </button>
+      </div>
+  </div>
+  </div>
+</div> -->
+
+<section id="home">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/media/sp1.jpg" class="d-block w-100 oscurecer" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="mt-4 text-end">
+            <h1>São Paulo Talks</h1>
+            <p>SPEAKER Talks arrives for the first time in Brazil! An event to connect with our community and share the knowledge and experiences of experts shaping the future of the Internet. Come meet fellow attendees, connect with other Speakers. Join us for an exciting experience!</p>
+            <div class="row">
+              <div class="col"><a class="orador btn btn-outline-light text-white" href="#oradores">I want to be a speaker</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/media/sp2.jpg" class="d-block w-100 oscurecer" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="mt-4 text-end">
+            <h1>São Paulo Talks</h1>
+            <p>SPEAKER Talks arrives for the first time in Brazil! An event to connect with our community and share the knowledge and experiences of experts shaping the future of the Internet. Come meet fellow attendees, connect with other Speakers. Join us for an exciting experience!</p>
+            <div class="row">
+              <div class="col"><a class="orador btn btn-outline-light text-white" href="#oradores">I want to be a speaker</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/media/sp3.jpg" class="d-block w-100 oscurecer" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <div class="mt-4 text-end">
+            <h1>São Paulo Talks</h1>
+            <p>SPEAKER Talks arrives for the first time in Brazil! An event to connect with our community and share the knowledge and experiences of experts shaping the future of the Internet. Come meet fellow attendees, connect with other Speakers. Join us for an exciting experience!</p>
+            <div class="row">
+              <div class="col"><a class="orador btn btn-outline-light text-white" href="#oradores">I want to be a speaker</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<section id="talks" class="mt-4 mb-4">
+  <h6 class="text-center">Know the</h6>
+  <h2 class="text-center mb-4">SPEAKERS</h2>
+  <div class="row align-items-center justify-content-center">
+    <div class="col-auto">
+      <div class="card card-custom mb-4">
+        <img src="media/tata.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="orador-tag1">Sports</h6>
+          <h6 class="orador-tag2">Mentoring</h6>
+          <h5 class="card-title">Tata Martino</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet recusandae, libero facilis veniam et quam quisquam dolorem sapiente sit rerum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="card card-custom mb-4">
+        <img src="media/angela.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="orador-tag1">Politics</h6>
+          <h6 class="orador-tag2">Leadership</h6>
+          <h5 class="card-title">Angela Merkel</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam error dolor, nobis dolore neque accusantium quasi, ea est velit possimus praesentium ullam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="card card-custom mb-4">
+        <img src="media/george.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="orador-tag3">Acting</h6>
+          <h6 class="orador-tag4">Human Rights</h6>
+          <h5 class="card-title">George Clooney</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eligendi eveniet nihil impedit fugit, culpa corporis ipsam harum illo dolores aperiam?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="date" class="mt-4 mb-4">
+  <div class="row">
+    <div class="col-lg-6 d-none d-lg-block">
+      <img src="media/auditorium.jpg" alt="Imagen" class="img-honolulu">
+    </div>
+    <div class="col-lg-6 bg-dark d-none d-lg-block">
+      <h3 class="text-white p-4">São Paulo, BRAZIL - April</h3>
+      <p class="text-white p-4">São Paulo is the largest city and state in Brazil, located in the southeastern part of the country. It serves as the financial and economic hub of Brazil, with a sprawling urban area covering a vast expanse. São Paulo is known for its cultural diversity, vibrant nightlife, and significant contributions to the country's arts and entertainment scene. The city is not only a major economic center but also home to numerous cultural institutions, museums, and parks. With its extensive metropolitan area, São Paulo plays a crucial role in shaping Brazil's social, cultural, and economic landscape.</p>
+      <button class="btn btn-primary m-4">Know more</button>
+    </div>
+    <!-- version responsive -->
+    <div class="col-12 mt-4 d-lg-none">
+      <img src="media/auditorium.jpg" alt="Imagen" class="img-honolulu">
+    </div>
+    <div class="col-12 bg-dark d-lg-none">
+      <h3 class="text-white p-4">São Paulo, BRAZIL - April</h3>
+      <p class="text-white p-4">São Paulo is the largest city and state in Brazil, located in the southeastern part of the country. It serves as the financial and economic hub of Brazil, with a sprawling urban area covering a vast expanse. São Paulo is known for its cultural diversity, vibrant nightlife, and significant contributions to the country's arts and entertainment scene. The city is not only a major economic center but also home to numerous cultural institutions, museums, and parks. With its extensive metropolitan area, São Paulo plays a crucial role in shaping Brazil's social, cultural, and economic landscape.</p>
+      <button class="btn btn-primary m-4">Know more</button>
+    </div>
+  </div>
+</section>
+
+
+<section id="speaker" class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+        <form class="d-block w-100">
+            <h5 class="mb-1 text-center">Become a</h5>
+            <h2 class="mb-4 text-center">SPEAKER</h2>
+            <h6 class="mb-3 text-center contacto-h6">Sign up as a Speaker to give an Ignite talk. Tell us what you want to talk about!</h6>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control mb-3" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" class="form-control mb-3" id="surname" placeholder="Enter your surname" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="mail" class="form-control mb-3" id="email" placeholder="Enter your email" required>
+          </div>
+            <div class="form-group">
+                <label for="topic">Topic</label>
+                <textarea class="form-control mb-3" id="topic" rows="4" placeholder="What would you like to talk about?" required></textarea>
+            </div>
+            <button type="button" id="btnSend" class="btn btn-success btn-lg btn-block">Send</button>
+        </form>
+    </div>
+</div>
+</section>
+
+
+<footer class="bg-dark text-light p-4 mt-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <ul class="list-inline text-center flex-column flex-md-row">
+          <li class="list-inline-item"><a href="#">Preguntas Frecuentes</a></li>
+          <li class="list-inline-item"><a href="#">Contáctanos</a></li>
+          <li class="list-inline-item"><a href="#">Prensa</a></li>
+          <li class="list-inline-item"><a href="#">Conferencias</a></li>
+          <li class="list-inline-item"><a href="#">Términos y Condiciones</a></li>
+          <li class="list-inline-item"><a href="#">Privacidad</a></li>
+          <li class="list-inline-item"><a href="#">Estudiantes</a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
