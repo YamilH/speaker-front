@@ -13,7 +13,7 @@ const newSpeaker = () => {
   })
   .then(response => response.json()) 
   .then(json => {
-      alert(`speaker uploaded id:${json.id}] ok`);
+      alert(`Speaker uploaded successfully`);
   })
   .catch(err => console.log(err));
 }
