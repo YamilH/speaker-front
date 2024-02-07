@@ -107,3 +107,7 @@ footer a {
   width: 100vw;
   }
 }
+
+.hover-footer:hover {
+  color: gold;
+}
